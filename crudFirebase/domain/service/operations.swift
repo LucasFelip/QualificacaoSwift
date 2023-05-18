@@ -8,30 +8,39 @@ func cadastrar(nome: String, cargo: String, salario: Double) {
     } else {
         funcionarios[nome] = Funcionario(nome: nome, cargo: cargo, salario: salario)
         print("Funcionário cadastrado!")
+        salvarFuncionarios(funcionarios)
     }
 }
 
+
 func buscar(nome: String) -> Funcionario? {
-    return funcionarios[nome]
+    let funcionariosCarregados = carregarFuncionarios()
+    return funcionariosCarregados[nome]
 }
+
 
 func remover(nome: String) {
     if let funcionario = funcionarios.removeValue(forKey: nome) {
+        salvarFuncionarios(funcionarios)
         print("Funcionário \(funcionario.nome) excluído com sucesso.")
     } else {
         print("Funcionário não encontrado.")
     }
 }
 
+
 func atualizar(nome: String, novoCargo: String, novoSalario: Double) {
     if funcionarios[nome] != nil {
         funcionarios[nome] = Funcionario(nome: nome, cargo: novoCargo, salario: novoSalario)
+        salvarFuncionarios(funcionarios) // Salvar o novo estado dos funcionários na persistência local
     } else {
         print("Funcionário não encontrado.")
     }
 }
 
 func listar() {
+    funcionarios = carregarFuncionarios()
+    
     guard !funcionarios.isEmpty else {
         print("Nenhum funcionário cadastrado.")
         return
@@ -41,3 +50,10 @@ func listar() {
         exibirFuncionario(funcionario)
     }
 }
+
+func deletarTodosFuncionarios() {
+    funcionarios = [:]
+    salvarFuncionarios(funcionarios)
+    print("Todos os funcionários foram excluídos.")
+}
+

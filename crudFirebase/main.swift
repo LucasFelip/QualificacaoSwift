@@ -30,6 +30,8 @@ func exibirMenu() {
                 excluirInterface()
             case 5:
                 print("Saindo...")
+//            case 6:                           //
+//                deletarTodosFuncionarios()    // Caso seja necessario deletar o banco de persistencia local
             default:
                 print("Opção inválida. Digite novamente.")
             }

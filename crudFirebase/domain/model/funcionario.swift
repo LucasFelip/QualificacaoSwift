@@ -1,6 +1,6 @@
 import Foundation
 
-struct Funcionario {
+struct Funcionario: Codable {
     let nome: String
     let cargo: String
     let salario: Double
