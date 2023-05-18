@@ -1,43 +1,35 @@
 import Foundation
 
-func exibirMenu() {
-    limparConsole()
+func atualizarInterface() {
     var opcao: Int = 0
     
-    while opcao != 5 {
-        print("Sistema gerenciamento de Funcionário")
+    while opcao != 2 {
+        print("Atualizar Funcionário")
         print("------------------------------------------")
-        print("  1 - Cadastrar")
-        print("  2 - Listar")
-        print("  3 - Atualizar")
-        print("  4 - Excluir")
-        print("  5 - Sair")
+        
+        atualizarFuncionario()
+        
+        print("\n")
+        print("------------------------------------------")
+        print("  1 - Atualizar outro funcionário")
+        print("  2 - Voltar a tela principal")
         print("------------------------------------------")
         
         print("Digite a opção desejada:")
         if let input = readLine(), let opcaoSelecionada = Int(input) {
             opcao = opcaoSelecionada
-          
-            limparConsole()
+            
             switch opcao {
             case 1:
-                cadastroInterface()
+                limparConsole()
+                atualizarFuncionario()
             case 2:
-                listarInterface()
-            case 3:
-                atualizarInterface()
-            case 4:
-                excluirInterface()
-            case 5:
-                print("Saindo...")
+                break
             default:
                 print("Opção inválida. Digite novamente.")
             }
         } else {
             print("Opção inválida. Digite novamente.")
         }
-      limparConsole()
     }
 }
-
-exibirMenu()
