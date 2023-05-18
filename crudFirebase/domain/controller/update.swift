@@ -5,6 +5,8 @@ func atualizarFuncionario() {
     let nome = readLine() ?? ""
     
     if buscar(nome: nome) != nil {
+        exibirFuncionario(funcionarios[nome]!)
+        
         print("\nNovo Cargo:")
         let cargo = readLine() ?? ""
         

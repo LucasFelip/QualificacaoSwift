@@ -32,7 +32,8 @@ func remover(nome: String) {
 func atualizar(nome: String, novoCargo: String, novoSalario: Double) {
     if funcionarios[nome] != nil {
         funcionarios[nome] = Funcionario(nome: nome, cargo: novoCargo, salario: novoSalario)
-        salvarFuncionarios(funcionarios) // Salvar o novo estado dos funcionários na persistência local
+        exibirFuncionario(funcionarios[nome]!)
+        salvarFuncionarios(funcionarios)
     } else {
         print("Funcionário não encontrado.")
     }
