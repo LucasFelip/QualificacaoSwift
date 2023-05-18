@@ -39,7 +39,6 @@ func exibirMenu() {
             print("Opção inválida. Digite novamente.")
         }
         limparConsole()
-        opcao = 0
     }
 }
 
