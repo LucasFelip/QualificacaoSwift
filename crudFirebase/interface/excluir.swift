@@ -22,7 +22,6 @@ func excluirInterface() {
             switch opcao {
             case 1:
                 limparConsole()
-                excluirInterface()
             case 2:
                 break
             default:

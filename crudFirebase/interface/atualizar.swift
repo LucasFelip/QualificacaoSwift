@@ -22,7 +22,6 @@ func atualizarInterface() {
             switch opcao {
             case 1:
                 limparConsole()
-                atualizarFuncionario()
             case 2:
                 break
             default:

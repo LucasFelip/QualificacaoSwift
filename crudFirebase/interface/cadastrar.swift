@@ -22,7 +22,6 @@ func cadastroInterface() {
             switch opcao {
             case 1:
                 limparConsole()
-                cadastroInterface()
             case 2:
                 break
             default:
