@@ -1,5 +1,5 @@
-# Projeto de qualificação Swift
-Este é o readme do projeto de qualificação Swift, no qual você irá desenvolver uma aplicação Command Line Tool para automatizar o cadastro de funcionários de uma empresa. O projeto deve ser desenvolvido na ferramenta Xcode usando a linguagem Swift. O sistema deve utilizar persistência local para armazenar os funcionários cadastrados, de modo que eles não sejam excluídos ao encerrar o programa.
+# Projeto de Swift
+Este é o readme do projeto desenvolvido Swift, no qual você irá desenvolver uma aplicação Command Line Tool para automatizar o cadastro de funcionários de uma empresa. O projeto deve ser desenvolvido na ferramenta Xcode usando a linguagem Swift. O sistema deve utilizar persistência local para armazenar os funcionários cadastrados, de modo que eles não sejam excluídos ao encerrar o programa.
 
 ## Requisitos
  - Aplicação Command Line Tool desenvolvida em Swift usando o Xcode.
@@ -8,14 +8,14 @@ Este é o readme do projeto de qualificação Swift, no qual você irá desenvol
  - Exclusão de funcionários específicos através de pesquisa por nome.
 
 ## Avaliação
-Os seguintes critérios serão utilizados para avaliar o projeto:
+Os seguintes critérios serão utilizados para definir os requisitos do projeto:
 
- - Cadastrar funcionário (2 pontos): Implemente a funcionalidade de cadastrar um funcionário solicitando nome, cargo e salário.
- - Listar todos os funcionários (2 pontos): Implemente a funcionalidade de listar todos os funcionários cadastrados exibindo seu nome, cargo e salário.
- - Deletar funcionário (3 pontos): Implemente a funcionalidade de excluir um funcionário específico através de uma pesquisa por nome.
- - Experiência do usuário (1 ponto): Projete a interface do usuário de forma intuitiva e amigável.
- - Persistência local (2 pontos): Utilize persistência local para armazenar os funcionários cadastrados de forma que eles sejam preservados ao encerrar o programa.
- - Bônus: Uso do POO: Estruturas e abstrações (1 ponto): Utilize conceitos de Programação Orientada a Objetos, como estruturas e abstrações, para organizar e simplificar o código.
+ - Cadastrar funcionário: Implemente a funcionalidade de cadastrar um funcionário solicitando nome, cargo e salário.
+ - Listar todos os funcionários: Implemente a funcionalidade de listar todos os funcionários cadastrados exibindo seu nome, cargo e salário.
+ - Deletar funcionário: Implemente a funcionalidade de excluir um funcionário específico através de uma pesquisa por nome.
+ - Experiência do usuário: Projete a interface do usuário de forma intuitiva e amigável.
+ - Persistência local Utilize persistência local para armazenar os funcionários cadastrados de forma que eles sejam preservados ao encerrar o programa.
+ - Bônus: Uso do POO: Estruturas e abstrações: Utilize conceitos de Programação Orientada a Objetos, como estruturas e abstrações, para organizar e simplificar o código.
 
 ## Como rodar o projeto
 Para executar o projeto, siga as seguintes etapas:
